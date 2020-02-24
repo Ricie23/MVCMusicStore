@@ -29,6 +29,8 @@ namespace MVCMusicStore.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
+
             Album album = db.Albums.Find(id);
             if (album == null)
             {
